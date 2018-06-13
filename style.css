@@ -1,0 +1,87 @@
+body {
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+
+header {
+    width: 100%;
+    height: 200px;
+    background-image: url("./header.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.heading {
+    padding-top: 30px;
+}
+
+.top-bar {
+    background-color: white;
+    width: 100%;
+    margin: 10px 0 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchButton {
+    display: inline-block;
+}
+
+#search {
+    display: inline-block;
+    width: initial;
+}
+
+#add {
+    align-self: flex-end;
+}
+
+.cover {
+    padding: 5px;
+}
+
+.cover img{
+    min-height: 150px;
+    max-width: 200px;
+
+}
+
+.overflow {
+    overflow: hidden;
+    min-height: 150px;
+    width: 200px;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.151) 0 0 10px;
+    opacity: 0.85;
+}
+
+.item:hover {
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.404) 0 0 10px;
+}
+
+.margin {
+
+    padding: 5px 10px 5px 0;
+}
+
+.modalPhoto img{
+    width: 100%;
+}
+
+#collection {
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.description {
+    margin: 5px;
+}

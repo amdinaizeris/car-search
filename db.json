@@ -1,0 +1,103 @@
+{
+  "cars": [
+    {
+      "make": "Jaguar",
+      "model": "XJ2200",
+      "year": "1995",
+      "price": "1000000",
+      "picture": "img/xj220.jpg",
+      "description": "The Jaguar XJ220 is a two-seat sports car produced by British luxury car manufacturer Jaguar from 1992 until 1994, in collaboration with the specialist automotive and race engineering company Tom Walkinshaw Racing.[3][4] The XJ220 officially recorded a top speed of 212.3 mph (341.7 km/h) during testing by Jaguar at the Nardo test track in Italy.[5] This made it the fastest production car from 1992 to 1993.[a][6] According to Jaguar, an XJ220 prototype managed a Nürburgring lap time of 7:46:36 in 1991 which was lower than any production car lap time before it.",
+      "id": 1
+    },
+    {
+      "make": "Ford",
+      "model": "Mustang",
+      "year": "1965",
+      "price": "50000",
+      "picture": "img/mustang.jpg",
+      "description": "The Ford Mustang is an American car manufactured by Ford. It was originally based on the platform of the second generation North American Ford Falcon, a compact car.[1] The original 1962 Ford Mustang I two-seater concept car had evolved into the 1963 Mustang II four-seater concept car which Ford used to pretest how the public would take interest in the first production Mustang. The 1963 Mustang II concept car was designed with a variation of the production model's front and rear ends with a roof that was 2.7 inches shorter.[2] Introduced early on April 17, 1964[3] (16 days after the Plymouth Barracuda), and thus dubbed as a \"1964½\" by Mustang fans, the 1965 Mustang was the automaker's most successful launch since the Model A.[4] The Mustang has undergone several transformations to its current sixth generation.",
+      "id": 10
+    },
+    {
+      "make": "Lamborghini",
+      "model": "Miura",
+      "year": "1966",
+      "price": "1000000",
+      "picture": "img/Miura.jpg",
+      "description": "The Lamborghini Miura is a sports car produced by Italian automaker Lamborghini between 1966 and 1973. The car was possibly the first supercar with a rear mid-engined two-seat layout, although the concept was first pioneered by René Bonnet with the Matra Djet in 1964. This layout has since become the standard for high-performance sports and supercars.[4] When released, it was the fastest production road car made.",
+      "id": 11
+    },
+    {
+      "make": "Ferrari",
+      "model": "Daytona",
+      "year": "1968",
+      "price": "1000000",
+      "picture": "img/Daytona.jpg",
+      "description": "The Ferrari Daytona, officially designated the Ferrari 365 GTB/4, is a two-seat grand tourer produced by Ferrari from 1968 to 1973. It was introduced at the Paris Auto Salon in 1968 to replace the 275 GTB/4, and featured the 275's Colombo V12 bored out to 4.4 L (4,390.35 cc, 267.9 cid).",
+      "id": 12
+    },
+    {
+      "make": "Lamborghini",
+      "model": "Countach",
+      "year": "1974",
+      "price": "1000000",
+      "picture": "img/Countach.jpg",
+      "description": "The Lamborghini Countach is a rear mid-engined, V12 sports car produced by Italian car manufacturer Lamborghini from 1974 to 1990. It is one of the then-exotic designs conceptualized by Italian Design house Bertone, which pioneered and popularized the sharply angled \"Italian Wedge\" design language. This design language was originally embodied and introduced to the public in 1970 as the Lancia Stratos Zero concept car, while the first showing of the Countach was in 1971 as the Lamborghini LP500 Concept Car. The DNA of the original Countach can be found within the design language of sports cars throughout the 70's and into the 1980s. The Countach also popularized the \"cab forward\" design concept, which pushes the passenger compartment forward to accommodate a larger rear-mounted engine.",
+      "id": 13
+    },
+    {
+      "make": "Jaguar",
+      "model": "XJ",
+      "year": "1986",
+      "price": "12000",
+      "picture": "img/xj.jpg",
+      "description": "The Jaguar XJ is the name of a series of full-size luxury cars sold by the British automobile brand, Jaguar Cars since 1968. Since 1970 they have been Jaguar's flagship. The original model was the last Jaguar saloon to have had the input of Sir William Lyons, the company's founder, and the model has been featured in countless media and high-profile appearances. The current Jaguar XJ was launched in 2009. It is one of the cars used by the British royal family and an armoured version is used for transporting the UK Prime Minister.",
+      "id": 14
+    },
+    {
+      "make": "Lamborghini",
+      "model": "Miura",
+      "year": "1966",
+      "price": "1000000",
+      "picture": "img/Miura.jpg",
+      "description": "The Lamborghini Miura is a sports car produced by Italian automaker Lamborghini between 1966 and 1973. The car was possibly the first supercar with a rear mid-engined two-seat layout, although the concept was first pioneered by René Bonnet with the Matra Djet in 1964. This layout has since become the standard for high-performance sports and supercars.[4] When released, it was the fastest production road car made.",
+      "id": 15
+    },
+    {
+      "make": "BMW",
+      "model": "M1",
+      "year": "1983",
+      "price": "300000",
+      "picture": "img/m1.jpg",
+      "description": "In the late 1970s, Italian manufacturer Lamborghini entered into an agreement with BMW to build a production racing car in sufficient quantity for homologation, but conflicts arose that prompted BMW to produce the car themselves.[2][3] The result was sold to the public, from 1978 to 1981, as the BMW M1. It is the first mid-engined BMW to be mass-produced, the second is the BMW i8. It employs a twin-cam M88/1 3.5 L six-cylinder petrol engine with Kugelfischer mechanical fuel injection. A version of this motor was later used in the South African version of the BMW 745i, of which 209 examples were built between 1984 and 1986, as well as the E24 BMW M6/M635CSi and E28 BMW M5. The engine has six separate throttle bodies, four valves per cylinder and produces 277 PS (204 kW; 273 hp) in the street version, giving a top speed of 260 km/h (162 mph). Turbocharged racing versions are capable of producing around 850 hp (634 kW).",
+      "id": 16
+    },
+    {
+      "make": "Aston Martin",
+      "model": "DB5",
+      "year": "1963",
+      "price": "800000",
+      "picture": "img/db5.jpg",
+      "description": "The Aston Martin DB5 is a British luxury grand tourer (GT) that was made by Aston Martin and designed by the Italian coachbuilder Carrozzeria Touring Superleggera. Released in 1963, it was an evolution of the final series of DB4. The DB series was named honouring Sir David Brown (the owner of Aston Martin from 1947 to 1972).",
+      "id": 20
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "C111",
+      "year": "1970",
+      "price": "150000",
+      "picture": "img/c111.jpg",
+      "description": "The Mercedes-Benz C111 was a series of experimental automobiles produced by Mercedes-Benz in the 1960s and 1970s. The company was experimenting with new engine technologies, including Wankel engines, diesel engines, and turbochargers, and used the basic C111 platform as a testbed. Other experimental features included multi-link rear suspension, gull-wing doors and a luxurious interior with leather trim and air conditioning.",
+      "id": 21
+    },
+    {
+      "make": "Ferrari",
+      "model": "250 GTO",
+      "year": "1962",
+      "price": "38000000",
+      "picture": "img/250gto.jpg",
+      "description": "The Ferrari 250 GTO is a GT car produced by Ferrari from 1962 to 1964 for homologation into the FIA's Group 3 Grand Touring Car category. It was powered by Ferrari's Tipo 168/62 V12 engine.\n\n    The \"250\" in its name denotes the displacement in cubic centimeters of each of its cylinders; \"GTO\" stands for \"Gran Turismo Omologato\",[1] Italian for \"Grand Touring Homologated.\"\n    \n    Just 39 250 GTOs were manufactured between 1962 and 1964. This includes 33 cars with 1962-63 bodywork (Series I), three with 1964 (Series II) bodywork similar to the Ferrari 250 LM, and three \"330 GTO\" specials with a larger engine. Four of the older 1962-1963 (Series I) cars were updated in 1964 with Series II bodies.",
+      "id": 22
+    }
+  ]
+}

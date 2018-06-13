@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Car collection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="container heading">Classic car collection</h1>
+    </header>
+    <div class="container">
+        <div class="top-bar">
+            <div class="search">
+                <input id="search" type="search" placeholder="Search..." class="form-control">
+                <button id="searchButton" type="button" class="btn btn-light" onclick="search()">Search</button>
+            </div>
+            <div class="add">
+                <button id="add" class="btn btn-success" data-toggle="modal" data-target="#addCar">Add a car</button>
+            </div>
+        </div>
+        <div id="collection" class="row">
+        </div>
+    </div>
+    <div class="modal fade" id="addCar" tabindex="-1" role="dialog" aria-labelledby="addCarLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addCarLabel">Add car</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group">
+                        <label for="make">Make: </label>
+                        <input type="text" id="make" placeholder="Ferrari" class="form-control">
+                        <label for="model">Model: </label>
+                        <input type="text" id="model" placeholder="250 GTO" class="form-control">
+                        <label for="year">Year: </label>
+                        <input type="number" id="year" placeholder="1962" class="form-control">
+                        <label for="price">Price: </label>
+                        <input type="number" id="price" placeholder="$38.000.000" class="form-control">
+                        <label for="decription">Description: </label>
+                        <textarea id="description" cols="40" rows="5" class="form-control"></textarea>
+                        <!-- <label for="picture">Picture: </label>
+                        <input type="file" id="picture" class="form-control"> -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeButton">Close</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal" onclick="saveEntry()" id="saveButton">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="showCar" tabindex="-1" role="dialog" aria-labelledby="showCarLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="showCarLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="carDescription">
+                </div>
+                <div class="modal-footer" id="descriptionFooter">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button id="wikiButton" type="button" class="btn btn-info" data-dismiss="modal" onclick="wikiEntry()">Wikipedia</button>
+                    <button id="editButton" type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" onclick="editEntry()">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editCar" tabindex="-1" role="dialog" aria-labelledby="showCarLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="showCarLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="carDescriptionEditable">
+                    <form class="form-group">
+                        <label for="make">Make: </label>
+                        <input type="text" id="makeEdit" class="form-control">
+                        <label for="model">Model: </label>
+                        <input type="text" id="modelEdit" class="form-control">
+                        <label for="year">Year: </label>
+                        <input type="number" id="yearEdit" class="form-control">
+                        <label for="price">Price: </label>
+                        <input type="number" id="priceEdit" class="form-control">
+                        <label for="decription">Description: </label>
+                        <textarea id="descriptionEdit" cols="40" rows="5" class="form-control"></textarea>
+                        <!-- <label for="picture">Picture: </label>
+                        <input type="file" id="pictureEdit" class="form-control"> -->
+                    </form>
+                </div>
+                <div class="modal-footer" id="editFooter">
+                    <button id="removeEdit" type="button" class="btn btn-danger" onclick="removeEntry()">Remove</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button id="saveEdit" type="button" class="btn btn-success" data-dismiss="modal" onclick="saveEdited()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
